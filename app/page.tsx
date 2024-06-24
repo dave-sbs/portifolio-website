@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="flex bg-black-100">
       <Sidebar links={links} side="left"/>
-      <div className="ml-8 flex-1 bg-black-100 flex flex-col justify-center items-center overflow-clip mx-auto sm:px-10">
+      <div className="ml-6 mr-6 flex-1 bg-black-100 flex flex-col justify-center items-center overflow-clip mx-auto sm:px-10">
         <FloatingNav navItems={navItems} />
         <Hero />
         <RecentProjects />
