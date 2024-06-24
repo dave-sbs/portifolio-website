@@ -4,27 +4,35 @@ import React from 'react'
 import Image from "next/image";
 import { FloatingCardContainer } from "./ui/FloatingCardContainer";
 import { title } from "process";
+import Link from "next/link";
+import { FaLocationArrow } from "react-icons/fa";
+import CallToActionButton from "./ui/CallToActionButton";
 
 const RecentProjects = () => {
   return (
-    <div className='py-20 relative'>
+    <div className='py-8 relative' id="projects">
         <h1 className='heading relative tracking-tight'>
             A small selection of {' '}
-            <span className='text-purple'>recent projects</span>
+            <span className='text-purple'>recent builds</span>
         </h1>
 
-        <div className='flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-12 mt-10'>
-            {projects.map(( {id, title, des, img, iconLists, link }) => (
+        <div className='flex flex-wrap items-center justify-center p-4 gap-12 mt-10'>
+            {projects.map(( {id, title, des, img, video, iconLists, link }) => (
                 <div key={id}>
                     <FloatingCardContainer 
                         title={title}
                         description={des}
-                        image={img}
+                        thumbnail={img}
+                        video={video}
                         href={link}
                         iconLists={iconLists}
                     />
                 </div>
             ))}
+        </div>
+
+        <div className="flex align-center justify-center p-6">
+            <CallToActionButton title="View My Other Projects" href="https://github.com/dave-sbs"></CallToActionButton>
         </div>
     </div>
   )

@@ -1,7 +1,8 @@
 export const navItems = [
+    { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Work Experience", link: "#work" },
-    { name: "Process", link: "#process"},
+    // { name: "Work Experience", link: "#work" },
+    { name: "Approach", link: "#approach"},
     { name: "Contact", link: "#contact" },
   ];
   
@@ -75,7 +76,8 @@ export const navItems = [
       title: "Colby College LLM Playground",
       des: "Access multiple open and closed source LLMs in one place. A playground for all your LLM needs.",
       img: "/p1.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      video: "abc.mov",
+      iconLists: ["/re.svg", "/js.svg", "/css3.svg", "/postgresql.svg"],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
@@ -83,7 +85,8 @@ export const navItems = [
       title: "Ziwewer Finance Hub",
       des: "All In One finance hub enabling Ethiopian users to access their bank accounts, credit cards, and loans in one place.",
       img: "/p1.png",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      video: "abc.mov",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/appwrite.svg", "/plaid.svg"],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
     {
@@ -91,7 +94,8 @@ export const navItems = [
       title: "Coast-Cow-Consumption Data Repository",
       des: "A full stack web application that allows users to enter, edit, search, and delete data across multiple domains. ",
       img: "/p1.png",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      video: "abc.mov",
+      iconLists: ["/php.svg", "/js.svg", "/html5.svg", "/css3.svg", "/mysql.svg"],
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
@@ -99,6 +103,7 @@ export const navItems = [
       title: "Some CS Project",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
       img: "/p1.png",
+      video: "abc.mov",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "https://github.com/adrianhajdin/iphone",
     },
