@@ -24,7 +24,7 @@ const Hero = () => {
 
                 <button className="px-6 py-3 mt-4 rounded-xl bg-white text-black-100 font-bold transition duration-200 hover:bg-purpleDark hover:text-white border-2 border-transparent hover:border-purpleDark">
                     <a href="mailto:davesah.bs@gmail.com" target='_blank' className='flex gap-2 items-center'>
-                        Let's Meet!
+                        Let&apos;s Meet!
                         <span><HiArrowRight /></span>
                     </a>
                 </button>

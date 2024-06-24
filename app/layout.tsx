@@ -6,8 +6,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Dave Boku | Personal Portifolio Website",
-  description: "Modern and Minimalist Personal Portifolio",
+  title: "Dave Boku",
+  description: "Dave Boku. CS & Math @ Colby College. Software Engineer with a Product Mind. Building Things Big and Small.",
 };
 
 export default function RootLayout({
