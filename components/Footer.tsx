@@ -1,6 +1,16 @@
-import React from 'react'
-import { FaLocationArrow } from 'react-icons/fa'
-import CallToActionButton from './ui/CallToActionButton'
+import React from 'react';
+import { FaLocationArrow } from 'react-icons/fa';
+import CallToActionButton from './ui/CallToActionButton';
+import MobileSidebar from './MobileSidebar';
+
+import { FaGithub, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
+import { MdEmail } from "react-icons/md";
+
+const links = [
+  { href: 'https://github.com/dave-sbs', icon: <FaGithub size={24} />},
+  { href: 'https://www.linkedin.com/in/dawit-dave-boku-10b7a6252/', icon: <FaLinkedin size={24} /> },
+  { href: 'https://mailto:davesah.bs@gmail.com', icon: <MdEmail size={24} />},
+];
 
 const Footer = () => {
   return (
@@ -15,6 +25,7 @@ const Footer = () => {
             <CallToActionButton title="Would Love to Chat" href="mailto:davesah.bs@gmail.com"/>
         </div>
         <div className='flex flex-col gap-0.5 mb-2 mt-40 items-center justify-start'>
+          <MobileSidebar links={links} />
           <p className='font-light'>Designed & Built by Dave Boku</p>
           <p className='font-light'>© 2024 Dave Boku</p>
         </div>

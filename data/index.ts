@@ -1,8 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    // { name: "Work Experience", link: "#work" },
-    { name: "Approach", link: "#approach"},
+    { name: "Tech Stack", link: "#tech" },
     { name: "Contact", link: "#contact" },
   ];
   
@@ -78,7 +77,7 @@ export const navItems = [
       img: "/p1.png",
       video: "abc.mov",
       iconLists: ["/re.svg", "/js.svg", "/css3.svg", "/postgresql.svg"],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      link: "https://github.com/dave-sbs",
     },
     {
       id: 2,
@@ -87,7 +86,7 @@ export const navItems = [
       img: "/p1.png",
       video: "abc.mov",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/appwrite.svg", "/plaid.svg"],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      link: "https://github.com/dave-sbs",
     },
     {
       id: 3,
@@ -96,7 +95,7 @@ export const navItems = [
       img: "/p1.png",
       video: "abc.mov",
       iconLists: ["/php.svg", "/js.svg", "/html5.svg", "/css3.svg", "/mysql.svg"],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "https://github.com/dave-sbs",
     },
     {
       id: 4,
@@ -105,7 +104,7 @@ export const navItems = [
       img: "/p1.png",
       video: "abc.mov",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-      link: "https://github.com/adrianhajdin/iphone",
+      link: "https://github.com/dave-sbs",
     },
   ];
   
@@ -152,5 +151,66 @@ export const navItems = [
     {
       id: 3,
       img: "/link.svg",
+    },
+  ];
+
+  export const techStack1 = [
+    {
+      tech: "Next.js",
+      experience: "3 Months",
+      icon: "next.svg",
+    },
+    {
+      tech: "React.js",
+      experience: "1 Year",
+      icon: "re.svg",
+    },
+    {
+      tech: "Java",
+      experience: "2 Years",
+      icon: "java.svg",
+    },
+    {
+      tech: "Python",
+      experience: "4 Years",
+      icon: "python.svg",
+    },
+    {
+      tech: "JavaScript",
+      experience: "2 Years",
+      icon: "js.svg",
+    },
+  ];
+
+  export const techStack2 = [
+    {
+      tech: "Figma",
+      experience: "6 Months",
+      icon: "figma.svg",
+    },
+    {
+      tech: "TypeScript",
+      experience: "1 Year",
+      icon: "ts.svg",
+    },
+    {
+      tech: "Tailwind CSS",
+      experience: "1 Year",
+      icon: "tail.svg",
+    },
+    {
+      tech: "Git",
+      experience: "2 Years",
+      icon: "git.svg",
+    },
+    {
+      tech: "PostgreSQL",
+      experience: "1 Year",
+      icon: "postgresql.svg",
+    },
+    {
+      tech: "Flask",
+      experience: "2 Years",
+      icon: "flask.svg",
     },
   ];
