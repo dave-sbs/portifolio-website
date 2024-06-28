@@ -1,11 +1,6 @@
-import { FloatingLamp } from "@/components/ui/FloatingLamp";
 import { projects } from '@/data'
 import React from 'react'
-import Image from "next/image";
 import { FloatingCardContainer } from "./ui/FloatingCardContainer";
-import { title } from "process";
-import Link from "next/link";
-import { FaLocationArrow } from "react-icons/fa";
 import CallToActionButton from "./ui/CallToActionButton";
 
 const RecentProjects = () => {
@@ -23,7 +18,7 @@ const RecentProjects = () => {
                         title={title}
                         description={des}
                         thumbnail={img}
-                        video={video}
+                        video={video} 
                         href={link}
                         iconLists={iconLists}
                     />

@@ -26,6 +26,18 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
             </CardItem>
 
             <CardItem translateZ="130" className="relative w-full mt-4">
+                <Image
+                    src={thumbnail}
+                    alt={title}
+                    layout="responsive"
+                    width={430}
+                    height={380}
+                    className="rounded-lg group-hover/card:shadow-xl"
+                />
+            </CardItem>
+
+            {/* VIDEO COMPONENT WORKS, I DONT HAVE PROFESSIONAL VIDEOS. WILL GET IT BACK ONCE I FIGURE OUT VIDEO SUPPLY */}
+            {/* <CardItem translateZ="130" className="relative w-full mt-4">
             <video
                 ref={videoRef}
                 src={video}
@@ -47,8 +59,9 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
                 <button className="rounded-full p-3 pointer-events-auto">
                 <IoPlayOutline className="text-black" />
                 </button>
-            </div>
-            </CardItem>
+            </div> 
+            </CardItem> */}
+
             <div className="flex justify-between items-center mt-8">
             <div className="flex items-center justify-between">
                 <CardItem
@@ -64,7 +77,7 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
                 ))}
                 </CardItem>
             </div>
-            <CardItem
+            {/* <CardItem
                 translateZ={20}
                 as={Link}
                 href={href}
@@ -72,7 +85,7 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
                 className="px-4 py-2 rounded-xl text-sm font-normal dark:text-white hover:bg-purpleDark hover:text-white"
             >
                 Check Live Site →
-            </CardItem>
+            </CardItem> */}
             </div>
         </CardBody>
         </CardContainer>
