@@ -82,10 +82,9 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
                         translateZ={15}
                         as={Link}
                         href={href}
-                        target="__blank"
                         className="px-4 py-2 rounded-xl text-sm font-normal dark:text-white hover:bg-purpleDark hover:text-white"
                     >
-                        Explore The Process →
+                        Explore The Build →
                     </CardItem>
                 </div>
             </CardBody>
