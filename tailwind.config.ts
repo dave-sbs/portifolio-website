@@ -169,6 +169,9 @@ const config = {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      fontFamily: {
+        clash: ['var(--font-clash)', 'sans-serif'],
+      },
     },
   },
   plugins: [

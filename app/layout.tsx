@@ -1,7 +1,18 @@
 import { ThemeProvider } from "./provider"
 import { Inter } from "next/font/google";
+import localFont from '@next/font/local'
 import type { Metadata } from "next";
 import "./globals.css";
+
+const clash = localFont({
+  src: [
+    {
+      path: '../public/fonts/Clash Grotesk/Fonts/OTF/ClashGrotesk-Medium.otf',
+      weight: '500'
+    },
+  ],
+  variable: '--font-clash'
+});
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,19 +27,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-      <ThemeProvider
-        attribute="class"
-        defaultTheme="dark"
-        enableSystem
-        disableTransitionOnChange
-      >
-        {children}
-      </ThemeProvider>
-
+    <html lang="en" className={`${inter.className} ${clash.variable}`}>
+      <body className="font-sans">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
-
     </html>
   );
 }
