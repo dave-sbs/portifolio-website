@@ -19,6 +19,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Dave Boku",
   description: "Dave Boku. CS & Math @ Colby College. Software Engineer with a Product Mind. Building Things Big and Small.",
+  icons: "/daveboku.png",
 };
 
 export default function RootLayout({
