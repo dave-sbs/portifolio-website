@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
-import { IoPlayOutline } from "react-icons/io5";
 import { CardBody, CardContainer, CardItem } from "./3DCardEffect";
 import Link from "next/link";
 
@@ -12,12 +11,17 @@ export function FloatingCardContainer( {title, description, thumbnail: thumbnail
         <CardContainer className="inter-var h-380 w-430">
             <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black-100 dark:border-white/[0.6] border-black/[0.1] w-auto sm:w-[30rem] h-380 rounded-sm border">
                 <CardItem translateZ="10" className="relative w-full">
-                    <Image
+                    {/* <Image
                         src={thumbnail}
                         alt={title}
                         width={490}
                         height={380}
-                        layout="responsive"
+                        className="rounded-sm group-hover/card:shadow-sm dark:border-white/[0.6] border-black/[0.1]"
+                    /> */}
+
+                    <img
+                        src={thumbnail}
+                        alt={title}
                         className="rounded-sm group-hover/card:shadow-sm dark:border-white/[0.6] border-black/[0.1]"
                     />
                 </CardItem>

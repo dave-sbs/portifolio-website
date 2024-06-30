@@ -23,7 +23,7 @@ const links = [
         </div> */}
         <div className="ml-2 mr-2 mt-20 sm:ml-6 sm:mr-6 flex-1 bg-black-100 flex flex-col justify-center items-center overflow-clip mx-auto sm:px-10">
             <h1 className='text-4xl font-bold'>Design Page Will Be Finished Very Soon!</h1>
-            <p className='text-xl py-4'>In the mean time, please feel free to check out the GitHub Repo.</p>
+            <p className='text-xl pt-4'>In the meantime, please feel free to check out the GitHub Repo.</p>
             <CallToActionButton href='https://github.com/dave-sbs' title='GitHub Repo'/>
             <div className='py-4 flex items-center justify-center gap-2'>
                 <span><FaHome /></span>
